@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gen.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div>Enter a strictly positive integer</div>
+    <input id="userNumber" type="number" >
+    
+    <div class="checkbox">
+        <div>
+            <input type="checkbox" id="uppercase" class="choice">
+            <label for="uppercase">Uppercase</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="lowercase" class="choice">
+            <label for="lowercase">Lowercase</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="number" class="choice">
+            <label for="number">Number</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="symbol" class="choice">
+            <label for="symbol">Symbol</label>
+        </div>
+    </div>
+
+    <button class="genPwd">Generate<br>password</button>
+
+    <div class="password"></div>
+    
+<script src="gen.js"></script>
+</body>
+</html>
